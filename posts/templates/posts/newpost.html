@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    New Post
+{% endblock %}
+
+{% block content %}
+<div class="newPostDiv">
+    <h1>Create New Post</h1>
+    <form action="{% url 'posts:new_post' %}" method="POST" enctype="multipart/form-data" class="newPostForm">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="submitBtn">Add Post</button>
+    </form>
+</div>
+{% endblock %}

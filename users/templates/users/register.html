@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title%}
+    Registeration Page
+{% endblock %}
+
+{% block content %}
+<div class="registerDiv">
+    <h2>Create an Account</h2>
+    <form action="{% url 'users:register' %}" method="POST" class="registerForm">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="submitBtn">Submit</button>
+    </form>
+</div>
+{% endblock %}
+

@@ -1,0 +1,338 @@
+/* Make full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content should take up the remaining space */
+main {
+    flex: 1;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end; 
+    gap: 1rem; 
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3a3838;
+}
+
+.nav-link-button {
+    background: none;
+    border: none;
+    color: #3a3838;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link-button:hover {
+    text-decoration: underline;
+}
+
+
+.postsdiv {
+    margin: 0 14px;
+}
+
+.heading{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.eachpost{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    width: 50px;
+    height: 28px;
+    margin-right: 12px;
+}
+
+button{
+    margin-top: 24px;
+    margin-bottom: 2px;
+}
+
+h2{
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+
+.eachpost p{
+    margin-top: 3px;
+}
+
+/* Footer style */
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    padding: 1rem;
+    height: 1px;
+}
+
+
+.postpage{
+    margin-left:20px;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+.registerDiv {
+    max-width: 400px;
+    margin: 2px auto;
+    padding: 4px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  #3b5998;
+    font-size: small;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;  /* Optional: remove left padding too */
+}
+
+.registerDiv h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.registerForm p, 
+.registerForm .errorlist {
+    font-size: small;
+    margin-bottom: 15px;
+    color:  #3b5998; /* red color for errors */
+}
+
+.registerForm .errorlist {
+    font-size: small;
+    margin: 5px 0 15px 0;
+    color:  #3b5998;
+    list-style-type: none;  /* remove bullets */
+    padding-left: 0;
+}
+
+
+.registerForm label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+}
+
+.registerForm input[type="text"],
+.registerForm input[type="password"],
+.registerForm input[type="email"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.registerForm input[type="text"]:focus,
+.registerForm input[type="password"]:focus,
+.registerForm input[type="email"]:focus {
+    border-color: #f34646;
+    outline: none;
+}
+
+.submitBtn {
+    width: 40%;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px 0;
+    margin-bottom: 46px;
+    background-color: #ea2d2d;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #c62323;
+}
+
+
+.loginDiv{
+    max-width: 400px;
+    margin: 2px auto;
+    padding: 4px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f34646;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginDiv form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* ✅ This centers children horizontally */
+}
+
+
+.loginDiv h2 {
+    text-align: center;
+    color: #333;
+}
+
+.loginForm p, 
+.loginForm .errorlist {
+    font-size: small;
+    margin-bottom: 15px;
+    color: #f34646; /* red color for errors */
+}
+
+
+.loginForm label {
+    display: block;
+    justify-content: center;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"],
+.loginForm input[type="email"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.loginForm input[type="text"]:focus,
+.loginForm input[type="password"]:focus,
+.loginForm input[type="email"]:focus {
+    border-color: #f34646;
+    outline: none;
+}
+.newPostDiv {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.newPostDiv h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newPostForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* ✅ Makes all fields stretch to same width */
+}
+
+.newPostForm p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.newPostForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.newPostForm input[type="text"],
+.newPostForm input[type="file"],
+.newPostForm textarea,
+.newPostForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.newPostForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.newPostForm input:focus,
+.newPostForm textarea:focus,
+.newPostForm select:focus {
+    border-color: #f34646;
+    outline: none;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #f34646;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #d13636;
+}

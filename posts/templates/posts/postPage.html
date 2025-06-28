@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title%}
+    postPage
+{% endblock %}
+
+{% block content %}
+<div class="postpage">
+    <h1>{{post.author}}:{{post.title}}</h1>
+    <div>
+        <p>{{post.body}}</p>
+        <img src="{{post.banner.url}}" />
+    </div>
+</div>
+{% endblock %}
