@@ -18,9 +18,8 @@ A full-stack blog web application built with Django, where users can create, man
 
 ## 🚀 Tech Stack
 
-- **Backend:** Python 3.12, Django 5.x
+- **Backend:** Python 3.12, Django 5.0.2
 - **Frontend:** HTML5, CSS3
-- **Database:** SQLite (default, can be switched)
 - **Auth:** Django's built-in user authentication system
 
 ---
